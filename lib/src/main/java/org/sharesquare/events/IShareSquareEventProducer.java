@@ -1,7 +1,7 @@
 package org.sharesquare.events;
 
-public interface IShareSquareEventProducer<T> {
+public interface IShareSquareEventProducer {
 
 
-    void produce(ShareSquareEvent<T> shareSquareEvent);
+    void produce(ShareSquareEvent shareSquareEvent);
 }

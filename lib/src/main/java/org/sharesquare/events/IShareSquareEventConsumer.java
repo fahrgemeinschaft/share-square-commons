@@ -1,6 +1,6 @@
 package org.sharesquare.events;
 
-public interface IShareSquareEventConsumer<T> {
+public interface IShareSquareEventConsumer {
 
-    public void consume(ShareSquareEvent<T> event);
+    public void consume(ShareSquareEvent event);
 }
