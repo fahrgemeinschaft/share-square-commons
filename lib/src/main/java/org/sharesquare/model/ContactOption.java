@@ -1,9 +1,10 @@
 package org.sharesquare.model;
 
 import lombok.Data;
+import org.sharesquare.AbstractShareSquareObject;
 
 @Data
-public class ContactOption {
+public class ContactOption extends AbstractShareSquareObject {
 
     public enum ContactType{
         //TODO

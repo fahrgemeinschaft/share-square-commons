@@ -1,9 +1,10 @@
 package org.sharesquare.model;
 
 import lombok.Data;
+import org.sharesquare.AbstractShareSquareObject;
 
 @Data
-public class Preference {
+public class Preference extends AbstractShareSquareObject {
 
     //TODO: better specs for prefs.!
     //TODO: typed prefrences

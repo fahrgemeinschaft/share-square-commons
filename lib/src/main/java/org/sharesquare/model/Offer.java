@@ -2,12 +2,12 @@ package org.sharesquare.model;
 
 
 import lombok.Data;
-import org.sharesquare.IShareSquareObject;
+import org.sharesquare.AbstractShareSquareObject;
 
 import java.util.List;
 
 @Data
-public class Offer implements IShareSquareObject {
+public class Offer extends AbstractShareSquareObject {
 
     private String userId;
 

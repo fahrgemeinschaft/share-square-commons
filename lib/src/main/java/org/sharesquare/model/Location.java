@@ -1,9 +1,10 @@
 package org.sharesquare.model;
 
 import lombok.Data;
+import org.sharesquare.AbstractShareSquareObject;
 
 @Data
-public class Location {
+public class Location extends AbstractShareSquareObject {
 
     public enum type {
         Address,
