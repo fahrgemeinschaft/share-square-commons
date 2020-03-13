@@ -4,11 +4,9 @@ import lombok.Data;
 import org.sharesquare.AbstractShareSquareObject;
 
 @Data
-public class Preference extends AbstractShareSquareObject {
+public abstract class Preference<T> extends AbstractShareSquareObject {
 
-    //TODO: better specs for prefs.!
-    //TODO: typed prefrences
-    //TODO null means optional
-    private String prefKey;
-    private String prefValue;
+    String key;
+    T value;
+
 }

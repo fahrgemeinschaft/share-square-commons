@@ -5,6 +5,7 @@ import lombok.Data;
 import org.sharesquare.AbstractShareSquareObject;
 
 import java.util.List;
+import java.util.UUID;
 
 @Data
 public class Offer extends AbstractShareSquareObject {
@@ -12,11 +13,11 @@ public class Offer extends AbstractShareSquareObject {
     private String userId;
 
     private Location origin;
-    private Location desination;
+    private Location destination;
 
     private List<ContactOption>  contactOptions;
 
-    private List<String> targetPlatforms;
+    private List<UUID> targetPlatforms;
 
     private List<Preference> preferences;
 
