@@ -2,12 +2,14 @@ package org.sharesquare.model;
 
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.sharesquare.AbstractShareSquareObject;
 
 import java.util.List;
 import java.util.UUID;
 
 @Data
+@EqualsAndHashCode(callSuper=false)
 public class Offer extends AbstractShareSquareObject {
 
     private String userId;

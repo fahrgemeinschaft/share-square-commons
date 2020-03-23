@@ -1,11 +1,13 @@
 package org.sharesquare.model.connector;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.sharesquare.AbstractShareSquareObject;
 
 import java.time.ZonedDateTime;
 
 @Data
+@EqualsAndHashCode(callSuper=false)
 public class ConnectorState extends AbstractShareSquareObject {
 
     /**
