@@ -4,6 +4,7 @@ import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.sharesquare.commons.configuration.Share2CommonsAutoConfiguration;
@@ -28,6 +29,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = Share2CommonsAutoConfiguration.class)
 @WebAppConfiguration
+@Ignore
 public class OAuthRestTemplateTest {
 
     private final MockWebServer mockWebServer = new MockWebServer();
