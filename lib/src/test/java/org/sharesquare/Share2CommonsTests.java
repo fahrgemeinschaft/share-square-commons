@@ -1,6 +1,7 @@
 package org.sharesquare;
 
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -16,6 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @ContextConfiguration
 @SpringBootApplication
+@Ignore
 
 public class Share2CommonsTests {
 
