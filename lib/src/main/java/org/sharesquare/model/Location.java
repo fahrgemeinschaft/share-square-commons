@@ -13,8 +13,8 @@ public class Location extends AbstractShareSquareObject {
         City
     }
 
-    private long latitude;
-    private long longitude;
+    private double latitude;
+    private double longitude;
     private String name;
     private type type;
 
