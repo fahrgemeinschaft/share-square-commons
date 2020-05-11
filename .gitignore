@@ -19,3 +19,9 @@ build/
 .gradle/
 
 local.properties
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
