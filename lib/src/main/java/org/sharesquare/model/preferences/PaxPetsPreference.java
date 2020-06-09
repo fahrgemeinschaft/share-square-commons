@@ -1,6 +1,7 @@
 package org.sharesquare.model.preferences;
 
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.sharesquare.model.Preference;
@@ -9,4 +10,9 @@ import org.sharesquare.model.Preference;
 @EqualsAndHashCode(callSuper=false)
 public class PaxPetsPreference extends Preference<PaxPetsValues> {
 
+	@Schema(allowableValues = {"PaxPetsPreference"})
+	private String type = this.getClass().getSimpleName();
+
+	public void setType(String type) {
+	}
 }
