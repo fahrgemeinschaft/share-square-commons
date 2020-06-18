@@ -13,5 +13,5 @@ public class TargetSystem extends AbstractShareSquareObject {
     String name;
     String description;
     URL vanityUrl;
-
+    String dataProtectionRegulations;
 }
