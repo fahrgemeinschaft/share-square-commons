@@ -8,7 +8,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 group = 'org.sharesquare.commons'
-version = '0.0.5-SNAPSHOT'
+version = '0.0.1-SNAPSHOT'
 
 sourceCompatibility = 8
 targetCompatibility = 8
@@ -59,7 +59,6 @@ dependencies {
     implementation group: 'org.springframework.security', name: 'spring-security-oauth2-resource-server', version:'5.3.0.RELEASE'
     implementation group: 'org.springframework.security', name: 'spring-security-oauth2-client', version:'5.3.0.RELEASE'
     compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.4.0.RELEASE'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.1.RELEASE'
     testCompile group: 'com.squareup.okhttp3', name: 'mockwebserver', version: '4.4.1'
