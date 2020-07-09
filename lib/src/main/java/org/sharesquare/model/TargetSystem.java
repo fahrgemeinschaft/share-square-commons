@@ -13,5 +13,7 @@ public class TargetSystem extends AbstractShareSquareObject {
     String name;
     String description;
     URL vanityUrl;
-
+    // ISO-639-1 conform
+    String contentLanguage;
+    String dataProtectionRegulations;
 }
