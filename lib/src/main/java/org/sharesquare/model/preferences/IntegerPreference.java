@@ -10,7 +10,7 @@ import org.sharesquare.model.Preference;
 @EqualsAndHashCode(callSuper=false)
 public class IntegerPreference extends Preference<Integer> {
 
-	@Schema(allowableValues = {"IntegerPreference"})
+	@Schema(example = "IntegerPreference")
 	private String type = this.getClass().getSimpleName();
 
 	public void setType(String type) {

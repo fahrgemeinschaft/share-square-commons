@@ -10,7 +10,7 @@ import org.sharesquare.model.Preference;
 @EqualsAndHashCode(callSuper=false)
 public class PaxSmokerPreference extends Preference<PaxSmokerValues> {
 
-	@Schema(allowableValues = {"PaxSmokerPreference"})
+	@Schema(example = "PaxSmokerPreference")
 	private String type = this.getClass().getSimpleName();
 
 	public void setType(String type) {

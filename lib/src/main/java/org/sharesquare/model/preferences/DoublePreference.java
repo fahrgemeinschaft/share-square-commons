@@ -10,7 +10,7 @@ import org.sharesquare.model.Preference;
 @EqualsAndHashCode(callSuper=false)
 public class DoublePreference extends Preference<Double> {
 
-	@Schema(allowableValues = {"DoublePreference"})
+	@Schema(example = "DoublePreference")
 	private String type = this.getClass().getSimpleName();
 
 	public void setType(String type) {
