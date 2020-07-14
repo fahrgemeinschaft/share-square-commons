@@ -10,7 +10,7 @@ import org.sharesquare.model.Preference;
 @EqualsAndHashCode(callSuper=false)
 public class BooleanPreference extends Preference<Boolean> {
 
-	@Schema(allowableValues = {"BooleanPreference"})
+	@Schema(example = "BooleanPreference")
 	private String type = this.getClass().getSimpleName();
 
 	public void setType(String type) {
