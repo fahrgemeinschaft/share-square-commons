@@ -16,4 +16,5 @@ public class TargetSystem extends AbstractShareSquareObject {
     // ISO-639-1 conform
     String contentLanguage;
     String dataProtectionRegulations;
+    Connector connector;
 }

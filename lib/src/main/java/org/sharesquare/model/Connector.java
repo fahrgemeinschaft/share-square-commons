@@ -9,9 +9,6 @@ import java.net.URL;
 @EqualsAndHashCode(callSuper=false)
 public class Connector extends AbstractShareSquareObject {
 
-
-    TargetSystem targetSystem;
-
     URL offerUpdateWebhook;
     URL aliveCheckWebhook;
 
