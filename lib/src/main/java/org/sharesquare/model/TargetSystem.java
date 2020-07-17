@@ -12,9 +12,9 @@ import java.net.URL;
 @EqualsAndHashCode(callSuper=false)
 public class TargetSystem extends AbstractShareSquareObject {
 
-	private String name;
+    private String name;
 
-	private String description;
+    private String description;
 
     @Schema(example = "http://pendlernetz.de")
     private URL vanityUrl;
