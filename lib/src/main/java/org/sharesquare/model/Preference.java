@@ -25,7 +25,7 @@ import org.sharesquare.model.preferences.*;
 })
 public abstract class Preference<T> extends AbstractShareSquareObject {
 
-    String key;
-    T value;
+	private String key;
 
+	private T value;
 }

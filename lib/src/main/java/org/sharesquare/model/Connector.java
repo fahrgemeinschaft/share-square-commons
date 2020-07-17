@@ -12,9 +12,9 @@ import java.net.URL;
 public class Connector extends AbstractShareSquareObject {
 
 	@Schema(example = "http://pendlernetz.de/api/offers")
-    URL offerUpdateWebhook;
+    private URL offerUpdateWebhook;
 
 	@Schema(example = "http://pendlernetz.de/api/alivecheck")
-    URL aliveCheckWebhook;
+    private URL aliveCheckWebhook;
 
 }
