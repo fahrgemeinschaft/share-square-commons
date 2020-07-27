@@ -40,7 +40,7 @@ public class Offer extends AbstractShareSquareObject {
 
     private List<ContactOption>  contactOptions;
 
-    private List<UUID> targetPlatforms;
+    private List<UUID> targetSystemIds;
 
     private List<Preference> preferences;
 
