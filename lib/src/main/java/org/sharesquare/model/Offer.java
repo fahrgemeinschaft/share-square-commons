@@ -21,19 +21,19 @@ import javax.validation.constraints.NotNull;
 @EqualsAndHashCode(callSuper=false)
 public class Offer extends AbstractShareSquareObject {
 
-    private String userId;
+	private String userId;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    @NotNull(message = "The startDate must not be empty")
-    private LocalDate startDate;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+	@NotNull(message = "The startDate must not be empty")
+	private LocalDate startDate;
 
-    @Schema(type = "string", format = "partial-time", example = "23:57")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
-    @NotNull(message = "The startTime must not be empty")
-    private LocalTime startTime;
+	@Schema(type = "string", format = "partial-time", example = "23:57")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
+	@NotNull(message = "The startTime must not be empty")
+	private LocalTime startTime;
 
-    @Schema(type = "string", example = "Europe/Paris")
-    private ZoneId startTimezone=ZoneId.of("Europe/Berlin");
+	@Schema(type = "string", example = "Europe/Paris")
+	private ZoneId startTimezone = ZoneId.of("Europe/Berlin");
 
 	public void setStartTimezone(final ZoneId startTimezone) {
 		this.startTimezone = (startTimezone != null) ? startTimezone : ZoneId.of("Europe/Berlin");
@@ -41,17 +41,17 @@ public class Offer extends AbstractShareSquareObject {
 
 	@NotNull(message = "The origin must not be empty")
 	@Valid
-    private Location origin;
+	private Location origin;
 
 	@NotNull(message = "The destination must not be empty")
 	@Valid
-    private Location destination;
+	private Location destination;
 
-    private List<ContactOption>  contactOptions;
+	private List<ContactOption> contactOptions;
 
-    private List<UUID> targetSystemIds;
+	private List<UUID> targetSystemIds;
 
-    private List<Preference> preferences;
+	private List<Preference> preferences;
 
-    private String additionalInfo;
+	private String additionalInfo;
 }
