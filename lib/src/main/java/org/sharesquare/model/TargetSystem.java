@@ -25,4 +25,6 @@ public class TargetSystem extends AbstractShareSquareObject {
     private String dataProtectionRegulations;
 
     private Connector connector;
+
+    private boolean active;
 }
