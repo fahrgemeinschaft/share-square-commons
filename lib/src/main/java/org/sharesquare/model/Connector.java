@@ -6,15 +6,19 @@ import org.sharesquare.AbstractShareSquareObject;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-import java.net.URL;
+import java.net.URI;
+import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper=false)
 public class Connector extends AbstractShareSquareObject {
 
     @Schema(example = "http://pendlernetz.de/api/offers")
-    private URL offerUpdateWebhook;
+    private URI offerUpdateWebhook;
 
     @Schema(example = "http://pendlernetz.de/api/alivecheck")
-    private URL aliveCheckWebhook;
+    private URI aliveCheckWebhook;
 
+    private String apikey;
+
+    private List<Client> clients;
 }

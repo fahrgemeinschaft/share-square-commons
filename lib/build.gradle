@@ -8,7 +8,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 group = 'org.sharesquare.commons'
-version = '0.0.3-SNAPSHOT'
+version = '0.0.4-SNAPSHOT'
 
 sourceCompatibility = 8
 targetCompatibility = 8
