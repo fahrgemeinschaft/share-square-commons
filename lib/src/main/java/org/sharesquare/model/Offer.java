@@ -51,7 +51,7 @@ public class Offer extends AbstractShareSquareObject {
 
 	private List<UUID> targetSystemIds;
 
-	private List<Preference<?>> preferences;
+	private Preferences preferences;
 
 	private String additionalInfo;
 }
